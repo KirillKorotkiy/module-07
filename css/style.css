@@ -1,0 +1,285 @@
+*, *::before, 
+    *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 32px;
+    color: black;
+}
+
+
+@font-face{
+    font-family: Roboto;
+    scr: url('../fonts/roboto/roboto-slab-v23-latin-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/montserrat/montserrat-v24-latin-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/montserrat/montserrat-v24-latin-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Water Brush";
+    src: url('../fonts/waterbrush/WaterBrush-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Droid serif";
+    src: url('../fonts/droid-serif/DroidSerif-Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+
+ img {
+    display:block;
+    max-width: 100%;
+}
+
+ ul{
+     list-style: none;
+    }
+
+.logo a{
+     text-decoration: none;
+     color: #fed443;
+}
+
+.logo{
+    font-family: "Water Brush";
+    font-size: 26px;
+    line-height: 41px;
+}
+
+.site-navigation{
+    display: flex;
+    line-height: 41px;
+    font-family: Monserrat, sans-serif;
+    font-weight: 700;
+}
+
+.site-navigation a {
+    text-transform: uppercase; 
+    text-decoration: none;
+}
+
+.site-navigation li:not(:last-child){
+    margin-right: 40px;
+}
+
+.page-nav{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 50px;
+    padding-bottom: 115px;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: black;
+}
+
+.link:hover{
+    color: #fed443;
+}
+
+.wrapper{
+    max-width: 940px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.services{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.services-item{
+    font-family: Monserrat, sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.sub-sevices-item{
+    font-family: "Droid serif", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #777777;
+}
+
+.pictures{
+    position: relative;
+    border-color: #fed443;
+    display: inline-block;
+    width: 74px;
+    height: 74px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.pictures-item{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-menu{
+    display: flex;
+}
+
+.service-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-service-menu{
+    text-align: center;
+    line-height: 24px;
+    color: #777777;
+}
+
+
+.top-menu-services{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-services{
+    display: flex;
+    flex-basis: 31%;
+}
+
+.gaps{
+    margin-bottom: 125px;
+}
+
+
+.background-bottom{
+    height: 680px;
+    background-color: black;
+    background-image: url(../bcg-images/map_image.png);
+    background-repeat: no-repeat;
+    background-position: right bottom 20px;
+background-size: 50% 80%;
+    padding-top: 100px;
+}
+
+.services-bottom{
+    color: white;
+    text-align: center;
+}
+
+.sing-up-form{
+    font-family: Montserrat, sans-serif;
+    flex-direction: column;
+}
+
+.sign-data{
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-data-item{
+    width: 455px;
+    height: 55px;
+    padding-left: 20px;
+    outline: solid;
+    outline-width: 1px;
+    outline-color: #777777;
+    border-radius: 4px;
+    border: 0;
+    font-weight: 700;
+}
+
+.sing-up-form::placeholder{
+    /* font-weight: 700; */
+    color: #bbbbbb;
+}
+
+
+.sign-data-item:not(:last-child){
+    margin-bottom: 22px;
+}
+
+
+.sign-data-item:valid{
+    outline-color: green;
+}
+
+.sign-data-item:invalid{
+    outline-color: red;
+}
+
+.sub-sign-item{
+    width: 455px;
+    height: 210px;
+    outline: solid;
+    outline-width: 1px;
+    outline-color: #777777;
+    border-radius: 4px;
+    font-weight: 700; 
+    padding: 20px;
+    border: 0;
+}
+
+.sub-sign-item:valid{
+    outline-color:green ;
+}
+
+.sub-sign-item:invalid{
+    outline-color:red ;
+}
+
+.send-button{
+    display: flex;
+    justify-content: center;
+}
+
+.sing{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.send-button-item{
+    width: 240px;
+    height: 60px;
+    border-color: #fed443;
+    color: white;
+    border-radius: 4px;
+    background-color: #fed443;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
