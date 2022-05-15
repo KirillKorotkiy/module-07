@@ -152,9 +152,6 @@ body{
     transform: translate(-50%, -50%);
 }
 
-.top-menu{
-    display: flex;
-}
 
 .service-menu{
     display: flex;
@@ -175,7 +172,6 @@ body{
 }
 
 .top-services{
-    display: flex;
     flex-basis: 31%;
 }
 
